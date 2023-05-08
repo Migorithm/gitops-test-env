@@ -20,7 +20,7 @@ spec:
         image: ghcr.io/migorithm/gitops-test:c6f2c891
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         livenessProbe:
           httpGet:
             path: /health
