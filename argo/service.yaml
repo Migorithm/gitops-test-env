@@ -4,10 +4,10 @@ metadata:
   name: gitops-test
   namespace: argocd-test
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: gitops-test 
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30000
+
